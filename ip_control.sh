@@ -73,13 +73,13 @@ fi
 	read -p "是否安装被控端文件(首次执行必须安装)[y/N]" down_files
 	if [[ "$down_files" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget https://www.ruoshui.cf/dungouji/gost -O /usr/bin/gost
+		wget https://github.com/ruoshui242/dungouji/raw/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget https://www.ruoshui.cf/dungouji/ip_table -O /usr/bin/ip_table
+		wget https://github.com/ruoshui242/dungouji/raw/master/ip_table -O /usr/bin/ip_table
 		chmod +x /usr/bin/ip_table
 		echo "正在下载brook"
-		wget https://www.ruoshui.cf/dungouji/brook -O /usr/bin/brook
+		wget https://github.com/ruoshui242/dungouji/raw/master/brook -O /usr/bin/brook
 		chmod +x /usr/bin/brook
 	fi
 	echo "转发端初始完成！请手动添加定时任务！"
@@ -96,10 +96,10 @@ beikong1_chushihua(){
 	read -p "是否下载被控端文件(首次执行必须安装)[y/N]" down_files_1
 	if [[ "$down_files_1" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget https://www.ruoshui.cf/dungouji/gost -O /usr/bin/gost
+		wget https://github.com/ruoshui242/dungouji/raw/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget https://www.ruoshui.cf/dungouji/iptables_gost -O /usr/bin/iptables_gost
+		wget https://github.com/ruoshui242/dungouji/raw/master/iptables_gost -O /usr/bin/iptables_gost
 		chmod +x /usr/bin/iptables_gost
 	fi
 	echo "被控端端初始完成！请手动添加定时任务！"
